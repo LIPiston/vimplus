@@ -435,18 +435,12 @@ function copy_files()
     rm -rf ~/.vimrc.custom.config
     cp ${PWD}/.vimrc.custom.config ~
 
-    rm -rf ~/.ycm_extra_conf.py
-    ln -s ${PWD}/.ycm_extra_conf.py ~
-
     mkdir ~/.vim
     rm -rf ~/.vim/colors
     ln -s ${PWD}/colors ~/.vim
 
     rm -rf ~/.vim/ftplugin
     ln -s ${PWD}/ftplugin ~/.vim
-
-    rm -rf ~/.vim/autoload
-    ln -s ${PWD}/autoload ~/.vim
 }
 
 # 安装mac平台字体
