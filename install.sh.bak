@@ -435,6 +435,10 @@ function copy_files()
     rm -rf ~/.vimrc.custom.config
     cp ${PWD}/.vimrc.custom.config ~
 
+    mkdir ~/.vim
+    rm -rf ~/.vim/colors
+    ln -s ${PWD}/colors ~/.vim
+
 }
 # 安装vim插件
 function install_vim_plugin()

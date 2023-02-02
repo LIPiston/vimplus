@@ -19,7 +19,7 @@ An automatic configuration program for vim
 
 ### Mac OS X
 
-#### 安装[HomeBrew]
+#### 安装[HomeBrew][3]
  
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -94,7 +94,7 @@ An automatic configuration program for vim
     ./update.sh
 
 
-### Android 64-bit([Termux])
+### Android 64-bit([Termux][87])
 
 #### 安装vimplus
 
