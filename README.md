@@ -1,5 +1,5 @@
 
-![vimplus-logo]
+![vimplus-logo](https://raw.githubusercontent.com/chxuan/vimplus/master/screenshots/vimplus-logo.png)
 
 An automatic configuration program for vim
 ===============================================
@@ -13,7 +13,7 @@ An automatic configuration program for vim
     <a href="https://github.com/lipiston/vimplus/blob/master/LICENSE" alt="lincense"><img src="https://img.shields.io/badge/license-MIT-blue.svg" /></a>
 </p>
 
-![main]
+![main](https://raw.githubusercontent.com/chxuan/vimplus/master/screenshots/main.png)
 
 ## 安装
 
