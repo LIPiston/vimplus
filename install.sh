@@ -439,6 +439,8 @@ function copy_files()
     mkdir ~/.vim
     rm -rf ~/.vim/autoload
     ln -s ${PWD}/autoload ~/.vim
+    rm -rf ~/.vim/colors
+    ln -s ${PWD}/colors ~/.vim
 
 }
 # 安装vim插件
