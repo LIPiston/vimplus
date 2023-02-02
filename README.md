@@ -80,12 +80,6 @@ An automatic configuration program for vim
 #### 设置Nerd Font
 
 为防止vimplus显示乱码，需设置linux终端字体为`Droid Sans Mono Nerd Font`。
-
-#### 多用户支持
-
-将vimplus在某个用户下安装好后，若需要在其他用户也能够使用vimplus，则执行
-
-    sudo ./install_to_user.sh username1 username2 //替换为真实用户名
     
 #### 更新vimplus
 
@@ -111,14 +105,15 @@ An automatic configuration program for vim
 
 ## 自定义
 
-> * [~/.vimrc][82]为vimplus的默认配置，一般不做修改
-> * [~/.vimrc.custom.plugins][83]为用户自定义插件列表，用户增加、卸载插件请修改该文件
-> * [~/.vimrc.custom.config][84]为用户自定义配置文件，一般性配置请放入该文件，可覆盖[~/.vimrc][82]里的配置
+> * [~/.vimrc]为vimplus的默认配置，一般不做修改
+> * [~/.vimrc.custom.plugins]为用户自定义插件列表，用户增加、卸载插件请修改该文件
 
 
 leader key: ','
-help.md: ',h'
+-----
 
+help.md: ',h'
+-----
 
 ## License
 
