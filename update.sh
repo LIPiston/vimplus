@@ -11,35 +11,6 @@ function is_exist_file()
     fi
 }
 
-# 更新mac平台字体
-function update_fonts_on_mac()
-{
-    rm -rf ~/Library/Fonts/Droid\ Sans\ Mono\ Nerd\ Font\ Complete.otf
-    cp ./fonts/Droid\ Sans\ Mono\ Nerd\ Font\ Complete.otf ~/Library/Fonts
-}
-
-# 更新android平台字体
-function update_fonts_on_android()
-{
-    rm -rf ~/.termux/font.ttf
-    mkdir ~/.termux
-    cp ./fonts/DejaVu.ttf ~/.termux/font.ttf
-
-    # 刷新style
-    REL="am broadcast --user 0 -a com.termux.app.reload_style com.termux"
-    $REL > /dev/null
-}
-
-# 更新linux平台字体
-function update_fonts_on_linux()
-{
-    mkdir -p ~/.local/share/fonts
-    rm -rf ~/.local/share/fonts/Droid\ Sans\ Mono\ Nerd\ Font\ Complete.otf
-    cp ./fonts/Droid\ Sans\ Mono\ Nerd\ Font\ Complete.otf ~/.local/share/fonts
-
-    fc-cache -vf ~/.local/share/fonts
-}
-
 # 更新vim插件
 function update_vim_plugin()
 {
@@ -64,14 +35,8 @@ function copy_files()
         cp ${PWD}/.vimrc.custom.config ~
     fi
 
-    rm -rf ~/.ycm_extra_conf.py
-    ln -s ${PWD}/.ycm_extra_conf.py ~
-
     rm -rf ~/.vim/colors
     ln -s ${PWD}/colors ~/.vim
-
-    rm -rf ~/.vim/ftplugin
-    ln -s ${PWD}/ftplugin ~/.vim
 
     rm -rf ~/.vim/autoload
     ln -s ${PWD}/autoload ~/.vim
@@ -102,7 +67,6 @@ function update_vimplus_on_mac()
 {
     git pull origin master
     copy_files
-    update_fonts_on_mac
     update_vim_plugin
     print_logo
 }
@@ -112,7 +76,6 @@ function update_vimplus_on_linux()
 {
     git pull origin master
     copy_files
-    update_fonts_on_linux
     update_vim_plugin
     print_logo
 }
@@ -122,7 +85,6 @@ function update_vimplus_on_android()
 {
     git pull origin master
     copy_files
-    update_fonts_on_android
     update_vim_plugin
     print_logo
 }

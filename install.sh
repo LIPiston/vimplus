@@ -475,8 +475,6 @@ function install_vimplus_on_mac()
     backup_vimrc_and_vim
     install_prepare_software_on_mac
     copy_files
-    install_fonts_on_mac
-    install_ycm
     install_vim_plugin
     print_logo
 }
@@ -495,8 +493,6 @@ function install_vimplus_on_android()
     backup_vimrc_and_vim
     install_prepare_software_on_android
     copy_files
-    install_fonts_on_android
-    install_ycm_on_android
     install_vim_plugin
     print_logo
 }
@@ -505,8 +501,6 @@ function install_vimplus_on_android()
 function begin_install_vimplus()
 {
     copy_files
-    install_fonts_on_linux
-    install_ycm
     install_vim_plugin
     print_logo
 }
@@ -590,7 +584,6 @@ function install_vimplus_on_alpine()
     install_prepare_software_on_alpine
     begin_install_vimplus
 
-    # 单独安装 ycm
 
 }
 
