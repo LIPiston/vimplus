@@ -112,7 +112,7 @@ An automatic configuration program for vim
 leader key: ','  
 help.md: ',h'
 
-'''vim
+```
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 插件列表
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -177,9 +177,8 @@ Plug 'ervandew/supertab'
 Plug 'zxqfl/tabnine-vim'       " Deep TabNine 深度补全插件
 
 call plug#end()            
+```
 
-
-'''
 ## License
 
 This software is licensed under the [MIT license][75]. © 2023 lipiston
