@@ -108,12 +108,9 @@ An automatic configuration program for vim
 > * [~/.vimrc]为vimplus的默认配置，一般不做修改
 > * [~/.vimrc.custom.plugins]为用户自定义插件列表，用户增加、卸载插件请修改该文件
 
-
-leader key: ','
------
-
+## 快捷键
+leader key: ','  
 help.md: ',h'
------
 
 ## License
 
