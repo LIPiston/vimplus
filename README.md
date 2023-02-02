@@ -112,6 +112,74 @@ An automatic configuration program for vim
 leader key: ','  
 help.md: ',h'
 
+'''vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 插件列表
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call plug#begin('~/.vim/plugged')
+
+Plug 'chxuan/cppfun'
+Plug 'chxuan/change-colorscheme'
+Plug 'Yggdroot/LeaderF'
+Plug 'mileszs/ack.vim'
+Plug 'easymotion/vim-easymotion'
+Plug 'haya14busa/incsearch.vim'
+Plug 'iamcco/mathjax-support-for-mkdp'
+Plug 'iamcco/markdown-preview.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'scrooloose/nerdtree'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'Valloric/YouCompleteMe'      " replaced by Deep-TabNine 
+Plug 'godlygeek/tabular'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-endwise'
+Plug 'majutsushi/tagbar'
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-scripts/L9'
+Plug 'vim-scripts/a.vim'
+Plug 'vim-scripts/txt.vim'
+" Plug 'ryanoasis/vim-devicons'
+Plug 'mhinz/vim-startify'
+Plug 'junegunn/vim-slash'
+Plug 'junegunn/gv.vim'
+Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-indent'
+Plug 'kana/vim-textobj-syntax'
+Plug 'kana/vim-textobj-function'
+Plug 'sgur/vim-textobj-parameter'
+Plug 'Shougo/echodoc.vim'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'terryma/vim-smooth-scroll'
+Plug 'terryma/vim-expand-region'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'othree/html5.vim'
+Plug 'plasticboy/vim-markdown'
+Plug 'flazz/vim-colorschemes'
+Plug 'vim-scripts/indentpython.vim'
+Plug 'rkulla/pydiction'
+Plug 'scrooloose/syntastic'
+Plug 'nvie/vim-flake8'
+Plug 'nvie/vim-flake8'
+Plug 'kien/ctrlp.vim'
+Plug 'Yggdroot/indentLine'      "缩进线
+Plug 'vim-scripts/DoxygenToolkit.vim'   "代码注释
+Plug 'cpiger/NeoDebug'          " C++ debug
+Plug 'lervag/vimtex'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'ervandew/supertab'
+Plug 'zxqfl/tabnine-vim'       " Deep TabNine 深度补全插件
+
+call plug#end()            
+
+
+'''
 ## License
 
 This software is licensed under the [MIT license][75]. © 2023 lipiston
