@@ -435,6 +435,11 @@ function copy_files()
     rm -rf ~/.vimrc.custom.config
     cp ${PWD}/.vimrc.custom.config ~
 
+
+    mkdir ~/.vim
+    rm -rf ~/.vim/autoload
+    ln -s ${PWD}/autoload ~/.vim
+
 }
 # 安装vim插件
 function install_vim_plugin()
