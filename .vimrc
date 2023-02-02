@@ -161,7 +161,7 @@ nnoremap <leader>d :bd<cr>
 " 主题
 "set background=dark
 "let g:onedark_termcolors=256
-colorscheme SolarizedDark
+colorscheme onedark
 
 " airline
 let g:airline_theme="onedark"
