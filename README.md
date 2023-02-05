@@ -109,8 +109,46 @@ An automatic configuration program for vim
 > * [~/.vimrc.custom.plugins]为用户自定义插件列表，用户增加、卸载插件请修改该文件
 
 ## 快捷键
-leader key: ','  
-help.md: ',h'
+插件相关
+------------
+
+| 快捷键       | 说明                                                                            |
+| -------      | -----                                                                           |
+| `,`          | Leader Key                                                                      |
+| `<leader>n`  | 打开/关闭代码资源管理器                                                         |
+| `<leader>t`  | 打开/关闭函数列表                                                               |
+| `<leader>a`  | .h .cpp 文件切换                                                                |
+| `<leader>i`  | 转到函数声明                                                                    |
+| `<leader>u`  | 转到函数实现                                                                    |
+| `<leader>o`  | 打开include文件                                                                 |
+| `<leader>y`  | 拷贝函数声明                                                                    |
+| `<leader>p`  | 生成函数定义                                                                    |
+| `<leader>w`  | 单词跳转                                                                        |
+| `<leader>f`  | 搜索~目录下的文件                                                               |
+| `<leader>F`  | 搜索当前目录下的文本                                                            |
+| `<leader>g`  | 显示git仓库提交记录                                                             |
+| `<leader>G`  | 显示当前文件提交记录                                                            |
+| `<leader>gg` | 显示当前文件在某个commit下的完整内容                                            |
+| `<leader>ff` | 语法错误自动修复(FixIt)                                                         |
+| `<F5>`       | 显示语法错误提示窗口                                                            |
+| `<F7>`       | 启用markdown实时预览                                                            |
+| `<F8>`       | 关闭markdown实时预览       i                                                    |
+| `<F9>`       | 显示上一主题                                                                    |
+| `<F10>`      | 显示下一主题                                                                    |
+| `<leader>l`  | 按竖线对齐                                                                      |
+| `<leader>=`  | 按等号对齐                                                                      |
+| `gcc`        | 注释代码                                                                        |
+| `gcap`       | 注释段落                                                                        |
+| `vif`        | 选中函数内容                                                                    |
+| `dif`        | 删除函数内容                                                                    |
+| `cif`        | 改写函数内容                                                                    |
+| `vaf`        | 选中函数内容（包括函数名 花括号）                                               |
+| `daf`        | 删除函数内容（包括函数名 花括号）                                               |
+| `caf`        | 改写函数内容（包括函数名 花括号）                                               |
+| `+`          | 逐渐增大选择区域                                                                |
+| `-`          | 逐渐减小选择区域                                                                |
+| `<c-j>`      | 多光标编辑,ctrl+j选中当前单词,再按ctrl+j选中下一个同样的单词，选完后按c批量修改 |
+
 
 ```
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -130,7 +168,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-" Plug 'Valloric/YouCompleteMe'      " replaced by Deep-TabNine 
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -144,7 +181,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-scripts/L9'
 Plug 'vim-scripts/a.vim'
 Plug 'vim-scripts/txt.vim'
-" Plug 'ryanoasis/vim-devicons'
 Plug 'mhinz/vim-startify'
 Plug 'junegunn/vim-slash'
 Plug 'junegunn/gv.vim'
